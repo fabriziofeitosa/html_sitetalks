@@ -67,7 +67,7 @@ header {
   background-color: #340249;
   color: #fff;
   min-height: 400px;
-  height: 100vh;
+  height: 90vh;
   background-image: url(images/bg-top.png);
   background-position: center center;
   background-size: cover;
@@ -105,9 +105,15 @@ header .sub-detalhes {
   background-color: #340249;
   color: #fff;
   padding: 60px 0;
-  font-size: 20px;
   text-align: center;
   font-weight: bold;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .sobre-projeto {
+    font-size: 20px;
+  }
 }
 
 .sobre-projeto .realizacao {
@@ -143,13 +149,14 @@ header .sub-detalhes {
   line-height: 1.2;
   color: #faa61a;
   text-align: center;
-  width: 90%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 0 auto 40px;
 }
 
 @media screen and (min-width: 768px) {
   .palestrantes .item {
     width: 30%;
+    margin: 0 auto;
   }
 }
 
@@ -199,5 +206,96 @@ header .sub-detalhes {
 
 .palestrantes .destaques {
   margin-bottom: 40px;
+}
+
+/* #######################################
+        PATROCINADOR
+####################################### */
+.patrocinador {
+  background-color: #340249;
+  color: #faa61a;
+  padding: 120px 15px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .patrocinador {
+    text-align: left;
+  }
+}
+
+.patrocinador .frase {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .patrocinador .frase {
+    margin-bottom: 0px;
+    padding-right: 80px;
+  }
+}
+
+.patrocinador .frase h1 {
+  line-height: 0.8;
+  font-weight: 300;
+  margin: 0;
+  font-size: 48px;
+}
+
+@media screen and (min-width: 992px) {
+  .patrocinador .frase h1 {
+    font-size: 55px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .patrocinador .frase h1 {
+    font-size: 70px;
+  }
+}
+
+.patrocinador .frase h1 strong {
+  font-weight: bold;
+}
+
+.patrocinador .btn-cadastrar {
+  color: #fff;
+  font-weight: 300;
+  line-height: 1;
+  background-color: #faa61a;
+  -webkit-box-shadow: 0px 23px 13px 0px rgba(255, 236, 33, 0.28);
+          box-shadow: 0px 23px 13px 0px rgba(255, 236, 33, 0.28);
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  font-size: 34px;
+}
+
+@media screen and (min-width: 768px) {
+  .patrocinador .btn-cadastrar {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .patrocinador .btn-cadastrar {
+    margin-top: 20px;
+    font-size: 34px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .patrocinador .btn-cadastrar {
+    margin-top: 20px;
+    font-size: 54px;
+  }
+}
+
+.patrocinador .btn-cadastrar:hover {
+  color: #340249;
 }
 /*# sourceMappingURL=style.css.map */

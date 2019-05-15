@@ -117,7 +117,7 @@ header {
     background-color: $roxo;
     color: #fff;
     min-height: 400px;
-    height: 100vh;
+    height: 90vh;
     background-image: url(images/bg-top.png);
     background-position: center center;
     background-size: cover;
@@ -152,9 +152,13 @@ header {
     background-color: $roxo;
     color: #fff;
     padding: 60px 0;
-    font-size: 20px;
     text-align: center;
     font-weight: bold;
+
+    font-size: 16px;
+    @include w-md() {
+        font-size: 20px;
+    }
     
     .realizacao {
         color: $laranja;
@@ -186,10 +190,12 @@ header {
         line-height: 1.2;
         color: $laranja;
         text-align: center;
-        width: 90%;
-        margin: 0 auto;
+        width: 80%;
+        margin: 0 auto 40px;
+
         @include w-md() {
             width: 30%;
+            margin: 0 auto;
         }
 
         .foto {
@@ -233,5 +239,76 @@ header {
 
     .destaques {
         margin-bottom: 40px;
+    }
+}
+
+/* #######################################
+        PATROCINADOR
+####################################### */
+
+.patrocinador {
+    background-color: $roxo;
+    color: $laranja;
+    padding: 120px 15px;
+    
+    text-align: center;
+    @include w-md() {
+        text-align: left;
+    }
+
+    .frase {
+        margin-bottom: 20px;
+        @include w-md() {
+            margin-bottom: 0px;
+            padding-right: 80px;
+        }
+
+        h1 {
+            line-height: 0.8;
+            font-weight: 300;
+            margin: 0;
+
+            font-size: 48px;
+            @include w-lg() {
+                font-size: 55px;
+            }
+            @include w-xl() {
+                font-size: 70px;
+            }
+
+            strong {
+                font-weight: bold;
+            }
+        }
+    }
+    .btn-cadastrar {
+        color: #fff;
+        font-weight: 300;
+        line-height: 1;
+        background-color: rgb(250, 166, 26);
+        box-shadow: 0px 23px 13px 0px rgba(255, 236, 33, 0.28);
+        display: inline-block;
+        padding: 20px 40px;
+        border-radius: 50px;
+        text-transform: uppercase;
+        transition: all .2s;
+        
+        font-size: 34px;
+        @include w-md() {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+        @include w-lg() {
+            margin-top: 20px;
+            font-size: 34px;
+        }
+        @include w-xl() {
+            margin-top: 20px;
+            font-size: 54px;
+        }
+
+        &:hover {
+            color: $roxo;
+        }
     }
 }
