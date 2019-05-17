@@ -410,3 +410,39 @@ footer {
         max-width: 80px;
     }
 }
+
+/* #######################################
+        PAG. INDEX
+####################################### */
+
+.page-index {
+    header {
+        .sub-detalhes {
+            max-width: 850px;
+            .detalhes-item {
+                @include w-md() {
+                    &:not(:last-child) {
+                        margin-right: 50px;
+                    }
+                }
+            }
+        }
+    }
+    .sobre-projeto {
+        padding-top: 100px;
+        padding-bottom: 0;
+        p {
+            text-align: left;
+        }
+    }
+    .patrocinador {
+        padding-top: 30px;
+    }
+}
+
+.slick-prev:before {
+  color: $roxo;
+}
+.slick-next:before {
+  color: $roxo;
+}

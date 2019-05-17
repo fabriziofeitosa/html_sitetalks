@@ -414,4 +414,38 @@ footer .lista-links {
 footer .logo-tresum {
   max-width: 80px;
 }
+
+/* #######################################
+        PAG. INDEX
+####################################### */
+.page-index header .sub-detalhes {
+  max-width: 850px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-index header .sub-detalhes .detalhes-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.page-index .sobre-projeto {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+.page-index .sobre-projeto p {
+  text-align: left;
+}
+
+.page-index .patrocinador {
+  padding-top: 30px;
+}
+
+.slick-prev:before {
+  color: #340249;
+}
+
+.slick-next:before {
+  color: #340249;
+}
 /*# sourceMappingURL=style.css.map */
