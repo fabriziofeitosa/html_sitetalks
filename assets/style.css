@@ -422,7 +422,14 @@ footer .logo-tresum {
   max-width: 850px;
 }
 
+.page-index header .sub-detalhes .detalhes-item {
+  max-width: 70%;
+}
+
 @media screen and (min-width: 768px) {
+  .page-index header .sub-detalhes .detalhes-item {
+    max-width: auto;
+  }
   .page-index header .sub-detalhes .detalhes-item:not(:last-child) {
     margin-right: 50px;
   }
@@ -447,5 +454,16 @@ footer .logo-tresum {
 
 .slick-next:before {
   color: #340249;
+}
+
+/* #######################################
+        OUTROS
+####################################### */
+.social {
+  padding-top: 12px;
+}
+
+.inscricao {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

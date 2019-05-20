@@ -420,7 +420,9 @@ footer {
         .sub-detalhes {
             max-width: 850px;
             .detalhes-item {
+                max-width: 70%;
                 @include w-md() {
+                    max-width: auto;
                     &:not(:last-child) {
                         margin-right: 50px;
                     }
@@ -445,4 +447,16 @@ footer {
 }
 .slick-next:before {
   color: $roxo;
+}
+
+/* #######################################
+        OUTROS
+####################################### */
+
+.social {
+  padding-top:12px;
+}
+
+.inscricao {
+	text-align:center;		
 }
